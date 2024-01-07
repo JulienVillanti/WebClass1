@@ -1,0 +1,59 @@
+body{
+    width: auto;
+    height: auto;
+    background-color: lightgray;
+}
+
+.container{
+    width: 100vw;
+    /* Changing the width of the container is pushing the last element of the row to the next row, in the first position */
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.myheader{
+    background-color: darkorange;
+    height: 4rem;
+    width: 100%;
+    margin: 0.5rem 0.5rem 0 0 ;
+    color: white;
+}
+
+.myfooter{
+    background-color: lightgreen;
+    height: 4rem;
+    width: 100%;
+    clear: both;
+}
+
+#main{
+    float: left;
+}
+
+
+#box{
+    background-color: rgb(174, 29, 49);
+    padding: 10px;
+    margin: 10px;
+    /* width: 20px;
+    height: 20px; */
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8,
+.box9,
+.box10 {
+    width: 200px;
+    height: 200px;
+    float: left;
+    /* Changing the direction of the float from left to right completely alters the arrangement of the widgets, now appearing on the right side of the page and starting with the last numbered widget, finishing with the first. */
+}
+
+
+

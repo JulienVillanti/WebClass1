@@ -1,0 +1,79 @@
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    display: grid;
+    width: 100%;
+    height: 75%;
+    grid-template-areas: 
+    "header header header header"
+    "sidebar main main sub"
+    "footer footer footer footer";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 25% 25% 25% 25%;
+    align-self: left;
+    justify-self: left;
+
+}
+
+.myheader{
+    background-color: rgb(209, 125, 22);
+    grid-area: header;
+    justify-content: space-around;
+    align-items: left;
+    gap: none; /* Adjust the space between logo and navbar */
+    height: 4rem;
+    width: 100%;
+    margin: 0.5rem 0.5rem 0 0;
+    color: white;
+}
+
+ 
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    color: white;
+    padding-left: 10px;
+}
+
+header p,
+footer p{
+
+    margin:20px 0 20px 0;
+}
+
+
+
+
+.sidebar{
+    background-color: rgb(255, 166, 0);
+    display: flex;
+    grid-area: sidebar;
+    /* grid-column: 1 / 2; */
+    width: 100%;
+}
+
+#maincontent{
+    background-color: lightblue;
+    width: 100%;
+    grid-area: main;
+}
+
+#subcontent{
+    grid-area: sub;
+    width: 35%;
+    background-color: grey;
+    width: 100%;
+
+}
+
+
+.myfooter{
+    background-color: lightgreen;
+    /* grid-column: 1 / 4; */
+    grid-area: footer;
+    height: 4rem;
+    width: 100%;
+}
